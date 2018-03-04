@@ -1,0 +1,22 @@
+Bugs in teammates code:
+
+1) Bug in the smithy_card function:
+	Smithy card draws 4 cards instead of 3.
+
+	for (i = 0; i < 4; i++)
+     {
+       drawCard(currentPlayer, state);
+     }
+
+	In the for loop, the loop should run 3 times instead of 4.
+
+2) Bug in the council_room_card function:
+	Council_room card draws 3 cards instead of 4 for the 	player.
+
+	//+4 Cards
+   	for (i = 1; i < 4; i++)
+     {
+       drawCard(currentPlayer, state);
+     }
+
+	In the for loop, the range should be from i = 0 to i < 4.
